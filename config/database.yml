@@ -13,7 +13,7 @@ development:
   encoding: utf8
   database: projeto_development
   pool: 5
-  username: DB_USER
+  username: fuck
   password: DB_PWD
   socket: /var/run/mysqld/mysqld.sock
 
