@@ -1,0 +1,2 @@
+class Accountant < Staff
+end

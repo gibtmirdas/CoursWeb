@@ -1,0 +1,41 @@
+<h1>Listing personnes</h1>
+
+<table class="table table-border table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Familyname</th>
+      <th>Firstname</th>
+      <th>Dateofbirth</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Zipcode</th>
+      <th>Privatephone</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personnes.each do |personne| %>
+      <tr>
+        <td><%= personne.familyName %></td>
+        <td><%= personne.firstName %></td>
+        <td><%= personne.dateOfBirth %></td>
+        <td><%= personne.email %></td>
+        <td><%= personne.address %></td>
+        <td><%= personne.city %></td>
+        <td><%= personne.zipCode %></td>
+        <td><%= personne.privatePhone %></td>
+        <td><%= link_to 'Show', personne %></td>
+        <td><%= link_to 'Edit', edit_personne_path(personne) %></td>
+        <td><%= link_to 'Destroy', personne, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personne', new_personne_path %>
