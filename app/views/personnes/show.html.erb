@@ -75,5 +75,10 @@
   <%= @personne.additionnalInsurance %>
 </p>
 
+<p>
+  <strong><%= link_to 'Survey', {:controller => 'surveys', :action => 'edit' }%>
+  </strong>
+</p>
+
 <%= link_to 'Edit', edit_personne_path(@personne) %> |
 <%= link_to 'Back', personnes_path %>
