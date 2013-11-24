@@ -1,22 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag "application", media: "all",
-                          "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  <%= render 'layouts/shim' %>
-</head>
-<body>
-<%= render 'layouts/header' %>
-<div class="container">
-  <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
-  <% end %>
-  <%= yield %>
-  <%= render 'layouts/footer' %>
-  <%= debug(params) if Rails.env.development? %>
-</div>
-</body>
+    <head>
+
+      <meta charset="utf-8" />
+      <title><%= full_title(yield(:title)) %></title>
+
+      <meta name="description" content="overview &amp; stats" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- basic styles -->
+
+      <%= stylesheet_link_tag "bootstrap.min", :media => "all"%>
+      <%= stylesheet_link_tag "font-awesome.min", :media => "all"%>
+
+      <!--[if IE 7]>
+        <%= stylesheet_link_tag "font-awesome-ie7.min", :media => "all"%>
+      <![endif]-->
+
+
+      <!-- fonts -->
+
+      <%= stylesheet_link_tag "ace-fonts", :media => "all"%>
+
+      <!-- ace styles -->
+
+      <%= stylesheet_link_tag "ace.min", :media => "all"%>
+      <%= stylesheet_link_tag "ace-rtl.min", :media => "all"%>
+      <%= stylesheet_link_tag "ace-skins.min", :media => "all"%>
+
+      <%= stylesheet_link_tag "jquery-ui-1.10.3.custom.min", :media => "all"%>
+      <%= stylesheet_link_tag "chosen", :media => "all"%>
+      <%= stylesheet_link_tag "datepicker", :media => "all"%>
+      <%= stylesheet_link_tag "bootstrap-timepicker", :media => "all"%>
+      <%= stylesheet_link_tag "daterangepicker", :media => "all"%>
+      <%= stylesheet_link_tag "colorpicker", :media => "all"%>
+      <%= stylesheet_link_tag "jquery.gritter", :media => "all"%>
+      <!--[if lte IE 8]>
+        <%= stylesheet_link_tag "ace-ie.min", :media => "all"%>
+      <![endif]-->
+
+      <!--[if !IE]> -->
+
+      <!-- <![endif]-->
+
+      <!--[if IE]>
+        <%= javascript_include_tag "jquery-1.10.2.min", :media => "all"%>
+      <![endif]-->
+
+      <%= javascript_include_tag "jquery-2.0.3.min", :media => "all"%>
+      <%= javascript_include_tag "bootstrap.min", :media => "all"%>
+      <%= javascript_include_tag "typeahead-bs2.min", :media => "all"%>
+      <%= javascript_include_tag "ace-extra.min", :media => "all"%>
+      <%= javascript_include_tag "ace-elements.min", :media => "all"%>
+      <%= javascript_include_tag "ace.min", :media => "all"%>
+      <%= javascript_include_tag "jquery-ui-1.10.3.custom.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.ui.touch-punch.min", :media => "all"%>
+      <%= javascript_include_tag "chosen.jquery.min", :media => "all"%>
+      <%= javascript_include_tag "fuelux/fuelux.spinner.min", :media => "all"%>
+      <%= javascript_include_tag "date-time/bootstrap-datepicker.min", :media => "all"%>
+      <%= javascript_include_tag "date-time/bootstrap-timepicker.min", :media => "all"%>
+      <%= javascript_include_tag "date-time/moment.min", :media => "all"%>
+      <%= javascript_include_tag "date-time/daterangepicker.min", :media => "all"%>
+      <%= javascript_include_tag "bootstrap-colorpicker.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.knob.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.autosize.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.inputlimiter.1.3.1.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.maskedinput.min", :media => "all"%>
+      <%= javascript_include_tag "bootstrap-tag.min", :media => "all"%>
+      <%= javascript_include_tag "bootbox.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.gritter.min", :media => "all"%>
+      <%= javascript_include_tag "spin.min", :media => "all"%>
+      <%= javascript_include_tag "jquery.slimscroll.min", :media => "all"%>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+      <!--[if lt IE 9]>
+          <%= javascript_include_tag "html5shiv", :media => "all"%>
+          <%= javascript_include_tag "respond.min", :media => "all"%>
+      <![endif]-->
+
+
+
+    </head>
+
+    <body class="navbar-fixed breadcrumbs-fixed">
+
+          <%= render 'layouts/header' %>
+
+        <div class="main-container" id="main-container">
+            <script type="text/javascript">
+              try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+            </script>
+            <div class="main-container-inner">
+                <a class="menu-toggler" id="menu-toggler" href="#">
+                  <span class="menu-text"></span>
+                </a>
+                <%= render 'layouts/menu' %>
+
+                <div class="main-content">
+
+                    <%= render 'layouts/navigationbar' %>
+
+                  <%= yield %>
+
+                  <%= render 'layouts/footer' %>
+
+                </div> <!-- /.main-content -->
+            </div>  <!-- /.main-container-inner -->
+
+            <div>
+
+                <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="icon-double-angle-up icon-only bigger-110"></i>
+                </a>
+
+            </div>
+
+        </div><!-- /.main-container -->
+
+    </body>
+
 </html>

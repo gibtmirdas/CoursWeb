@@ -1,2 +1,365 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Bureau') %>
+
+<div class="row">
+    <div class="col-xs-12 widget-container-span">
+        <div class="widget-box transparent">
+            <div class="widget-body">
+                <form class="form-group no-margin-bottom center">
+                    <button class="btn btn-success btn-xs no-radius tooltip-success align-middle" type="button" data-rel="tooltip" data-placement="left" title="Ajouter un patient" style="padding-bottom: 3px;padding-top: 8px">
+                        <i class="icon-plus-sign bigger-180"></i>
+                    </button>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-small input-lg input-mask-patient form-control" type="text" id="form-field-1" placeholder="N° Patient" />
+                        <i class="icon-user"></i>
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Nom" />
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Prénom" />
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-large input-mask-phone form-control" id="form-field-mask-2" placeholder="ex. : (+41) 22 - 000 - 00 - 00" />
+                        <i class="icon-phone"></i>
+                    </span>
+
+                     <span class="input-icon input-icon-right">
+                        <input class="input-lg input-sm input-large input-mask-date form-control" id="form-field-mask-1" data-date-format="dd-mm-yyyy" placeholder="Date de naissance (dd/mm/yyyy)" />
+                        <i class="icon-gift"></i>
+                    </span>
+
+                    <button class="btn btn-xs btn-info no-radius align-middle" type="button" style="padding-bottom: 3px;padding-top: 8px" >
+                        <i class="icon-search bigger-180 center"></i>
+                    </button>
+
+                    <button class="btn btn-xs  btn-info no-radius tooltip-info align-bottom" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset" style="padding-bottom: 3px; padding-top: 3px">
+                        <i class=" icon-refresh bigger-130"></i>
+                    </button>
+                </form>
+
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 widget-container-span">
+    <div class="widget-box transparent">
+      <div class="widget-body ">
+        <div class="widget-main padding-12 no-padding-left no-padding-right no-padding-top">
+          <div class="tab-content padding-4">
+              <div class="slim-scroll" data-height="150">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<script type="text/javascript">
+    jQuery(function($) {
+        $.mask.definitions['~']='[+-]';
+        $('.input-mask-date').mask('99/99/9999');
+        $('.input-mask-phone').mask('(+99) 99 - 999 - 99 - 99');
+        $('.input-mask-eyescript').mask('~9.99 ~9.99 999');
+        $('.input-mask-patient').mask('p-99-9999');
+        $(".input-mask-product").mask("a*-999-a999",{placeholder:" ",completed:function(){alert("You typed the following: "+this.val());}});
+
+    });
+
+
+</script>
+
+
+<script type="text/javascript">
+    jQuery(function($) {
+        /**
+         $('#myTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				  console.log(e.target.getAttribute("href"));
+				})
+         */
+
+        $('#accordion-style').on('click', function(ev){
+            var target = $('input', ev.target);
+            var which = parseInt(target.val());
+            if(which == 2) $('#accordion').addClass('accordion-style2');
+            else $('#accordion').removeClass('accordion-style2');
+        });
+
+
+        var oldie = /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase());
+        $('.easy-pie-chart.percentage').each(function(){
+            $(this).easyPieChart({
+                barColor: $(this).data('color'),
+                trackColor: '#EEEEEE',
+                scaleColor: false,
+                lineCap: 'butt',
+                lineWidth: 8,
+                animate: oldie ? false : 1000,
+                size:75
+            }).css('color', $(this).data('color'));
+        });
+
+        $('[data-rel=tooltip]').tooltip();
+        $('[data-rel=popover]').popover({html:true});
+
+
+        $('#gritter-regular').on(ace.click_event, function(){
+            $.gritter.add({
+                title: 'This is a regular notice!',
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="blue">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                image: $path_assets+'/avatars/avatar1.png',
+                sticky: false,
+                time: '',
+                class_name: (!$('#gritter-light').get(0).checked ? 'gritter-light' : '')
+            });
+
+            return false;
+        });
+
+        $('#gritter-sticky').on(ace.click_event, function(){
+            var unique_id = $.gritter.add({
+                title: 'This is a sticky notice!',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="red">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                image: $path_assets+'/avatars/avatar.png',
+                sticky: true,
+                time: '',
+                class_name: 'gritter-info' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+            });
+
+            return false;
+        });
+
+
+        $('#gritter-without-image').on(ace.click_event, function(){
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a notice without an image!',
+                // (string | mandatory) the text inside the notification
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="orange">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                class_name: 'gritter-success' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+            });
+
+            return false;
+        });
+
+
+        $('#gritter-max3').on(ace.click_event, function(){
+            $.gritter.add({
+                title: 'This is a notice with a max of 3 on screen at one time!',
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" class="green">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                image: $path_assets+'/avatars/avatar3.png',
+                sticky: false,
+                before_open: function(){
+                    if($('.gritter-item-wrapper').length >= 3)
+                    {
+                        return false;
+                    }
+                },
+                class_name: 'gritter-warning' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+            });
+
+            return false;
+        });
+
+
+        $('#gritter-center').on(ace.click_event, function(){
+            $.gritter.add({
+                title: 'This is a centered notification',
+                text: 'Just add a "gritter-center" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                class_name: 'gritter-info gritter-center' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+            });
+
+            return false;
+        });
+
+        $('#gritter-error').on(ace.click_event, function(){
+            $.gritter.add({
+                title: 'This is a warning notification',
+                text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                class_name: 'gritter-error' + (!$('#gritter-light').get(0).checked ? ' gritter-light' : '')
+            });
+
+            return false;
+        });
+
+
+        $("#gritter-remove").on(ace.click_event, function(){
+            $.gritter.removeAll();
+            return false;
+        });
+
+
+        ///////
+
+
+        $("#bootbox-regular").on(ace.click_event, function() {
+            bootbox.prompt("What is your name?", function(result) {
+                if (result === null) {
+                    //Example.show("Prompt dismissed");
+                } else {
+                    //Example.show("Hi <b>"+result+"</b>");
+                }
+            });
+        });
+
+        $("#bootbox-confirm").on(ace.click_event, function() {
+            bootbox.confirm("Are you sure?", function(result) {
+                if(result) {
+                    //
+                }
+            });
+        });
+
+        $("#bootbox-options").on(ace.click_event, function() {
+            bootbox.dialog({
+                message: "<span class='bigger-110'>I am a custom dialog with smaller buttons</span>",
+                buttons:
+                {
+                    "success" :
+                    {
+                        "label" : "<i class='icon-ok'></i> Success!",
+                        "className" : "btn-sm btn-success",
+                        "callback": function() {
+                            //Example.show("great success");
+                        }
+                    },
+                    "danger" :
+                    {
+                        "label" : "Danger!",
+                        "className" : "btn-sm btn-danger",
+                        "callback": function() {
+                            //Example.show("uh oh, look out!");
+                        }
+                    },
+                    "click" :
+                    {
+                        "label" : "Click ME!",
+                        "className" : "btn-sm btn-primary",
+                        "callback": function() {
+                            //Example.show("Primary button");
+                        }
+                    },
+                    "button" :
+                    {
+                        "label" : "Just a button...",
+                        "className" : "btn-sm"
+                    }
+                }
+            });
+        });
+
+
+
+        $('#spinner-opts small').css({display:'inline-block', width:'60px'})
+
+        var slide_styles = ['', 'green','red','purple','orange', 'dark'];
+        var ii = 0;
+        $("#spinner-opts input[type=text]").each(function() {
+            var $this = $(this);
+            $this.hide().after('<span />');
+            $this.next().addClass('ui-slider-small').
+                    addClass("inline ui-slider-"+slide_styles[ii++ % slide_styles.length]).
+                    css({'width':'125px'}).slider({
+                        value:parseInt($this.val()),
+                        range: "min",
+                        animate:true,
+                        min: parseInt($this.data('min')),
+                        max: parseInt($this.data('max')),
+                        step: parseFloat($this.data('step')),
+                        slide: function( event, ui ) {
+                            $this.attr('value', ui.value);
+                            spinner_update();
+                        }
+                    });
+        });
+
+        $.fn.spin = function(opts) {
+            this.each(function() {
+                var $this = $(this),
+                        data = $this.data();
+
+                if (data.spinner) {
+                    data.spinner.stop();
+                    delete data.spinner;
+                }
+                if (opts !== false) {
+                    data.spinner = new Spinner($.extend({color: $this.css('color')}, opts)).spin(this);
+                }
+            });
+            return this;
+        };
+
+        function spinner_update() {
+            var opts = {};
+            $('#spinner-opts input[type=text]').each(function() {
+                opts[this.name] = parseFloat(this.value);
+            });
+            $('#spinner-preview').spin(opts);
+        }
+
+
+
+        $('#id-pills-stacked').removeAttr('checked').on('click', function(){
+            $('.nav-pills').toggleClass('nav-stacked');
+        });
+
+
+    });
+</script>
+
+<script type="text/javascript">
+    jQuery(function($) {
+
+        $('#simple-colorpicker-1').ace_colorpicker({pull_right:true}).on('change', function(){
+            var color_class = $(this).find('option:selected').data('class');
+            var new_class = 'widget-header';
+            if(color_class != 'default')  new_class += ' header-color-'+color_class;
+            $(this).closest('.widget-header').attr('class', new_class);
+        });
+
+
+        // scrollables
+        $('.slim-scroll').each(function () {
+            var $this = $(this);
+            $this.slimScroll({
+                height: $this.data('height') || 100,
+                railVisible:true
+            });
+        });
+
+        /**$('.widget-box').on('ace.widget.settings' , function(e) {
+					e.preventDefault();
+				});*/
+
+
+
+            // Portlets (boxes)
+        $('.widget-container-span').sortable({
+            connectWith: '.widget-container-span',
+            items:'> .widget-box',
+            opacity:0.8,
+            revert:true,
+            forceHelperSize:true,
+            placeholder: 'widget-placeholder',
+            forcePlaceholderSize:true,
+            tolerance:'pointer'
+        });
+
+    });
+</script>
