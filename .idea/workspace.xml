@@ -2,115 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/survey.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/ace-elements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/ace-extra.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/ace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/additional-methods.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/bootbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/bootstrap-colorpicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/bootstrap-tag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/bootstrap-wysiwyg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/chosen.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/bootstrap-timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/daterangepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.el.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.he.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.is.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.kr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.lt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.lv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.ms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.ro.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.rs-latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.rs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.sk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.sl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.sw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.th.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/locales/bootstrap-datepicker.zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/date-time/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/excanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/fuelux/data/fuelux.tree-sampledata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/fuelux/fuelux.spinner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/fuelux/fuelux.tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/fuelux/fuelux.wizard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/fullcalendar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery-1.10.2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery-2.0.3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery-ui-1.10.3.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.autosize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.colorbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.easy-pie-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.gritter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.hotkeys.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.inputlimiter.1.3.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.knob.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.maskedinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.mobile.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.slimscroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.sparkline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.ui.touch-punch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/jquery.validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/markdown/bootstrap-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/markdown/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/markdown/to-markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/respond.src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/select2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/spin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/x-editable/ace-editable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/js/uncompressed/x-editable/bootstrap-editable.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_shim.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_shim.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_menu.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_navigationbar.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/help.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/help.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/projeto.iml" afterPath="$PROJECT_DIR$/.idea/projeto.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/static_pages.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/static_pages.js.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projeto.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385157480248" ignored="false" />
+    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385306727524" ignored="false" />
     <file path="/.gitignore" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1381303599508" ignored="false" />
-    <file path="/database.yml" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1384174715559" ignored="false" />
+    <file path="/database.yml" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385311911770" ignored="false" />
     <file path="/application_helper.rb" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1380994910452" ignored="false" />
     <file path="/_footer.html.erb" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1384899465838" ignored="false" />
     <file path="/new.html.erb" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1383234123162" ignored="false" />
@@ -188,201 +92,16 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="39" selection-start="4745" selection-end="4745" vertical-scroll-proportion="-10.408163">
-              <folding>
-                <marker date="1385257747000" expanded="true" signature="21:4766" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="32:3666" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="439:539" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="1321:1415" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="1480:1578" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="3482:3649" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="3717:4757" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="3817:4719" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="3861:3959" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="4006:4442" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="4074:4145" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="4234:4399" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="4494:4703" placeholder="..." />
-                <marker date="1385257747000" expanded="true" signature="4588:4683" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="90" selection-start="2825" selection-end="2825" vertical-scroll-proportion="30.0">
-              <folding>
-                <marker date="1385299933000" expanded="true" signature="49:2592" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="99:2585" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="144:2574" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="182:2559" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="248:2537" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="437:473" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="474:570" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="634:871" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="935:1084" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="1148:1300" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="1364:1613" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="1678:1955" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2058:2094" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2095:2196" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2380:2417" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2418:2513" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2611:5198" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2659:5189" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2700:5180" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2733:5169" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2826:5156" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2872:5141" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="2930:5124" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="5232:5686" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="5257:5673" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="5720:14676" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="5745:14665" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="5755:5903" placeholder="/**$('#myTab a[data-toggle=&quot;tab&quot;]').on('shown.bs.tab', function (e) { ...*/" />
-                <marker date="1385299933000" expanded="true" signature="5959:6205" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="6343:6698" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="6378:6650" placeholder="{&quot;trackColor&quot;: '#EEEEEE'...}" />
-                <marker date="1385299933000" expanded="true" signature="6861:7422" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="6889:7383" placeholder="{&quot;title&quot;: 'This is a regular notice!'...}" />
-                <marker date="1385299933000" expanded="true" signature="7485:8082" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="7529:8043" placeholder="{&quot;title&quot;: 'This is a sticky notice!'...}" />
-                <marker date="1385299933000" expanded="true" signature="8153:8774" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="8181:8735" placeholder="{&quot;title&quot;: 'This is a notice without an image!'...}" />
-                <marker date="1385299933000" expanded="true" signature="8836:9628" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="8864:9589" placeholder="{&quot;title&quot;: 'This is a notice with a max of 3 on screen at one time!'...}" />
-                <marker date="1385299933000" expanded="true" signature="9300:9464" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="9385:9446" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="9692:10084" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="9720:10045" placeholder="{&quot;title&quot;: 'This is a centered notification'...}" />
-                <marker date="1385299933000" expanded="true" signature="10146:10522" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="10174:10483" placeholder="{&quot;title&quot;: 'This is a warning notification'...}" />
-                <marker date="1385299933000" expanded="true" signature="10586:10658" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="10742:11035" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="10810:11023" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="10849:10924" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="10930:11009" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11100:11261" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11164:11249" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11193:11235" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11326:12702" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11355:12690" placeholder="{&quot;message&quot;: &quot;&lt;span class='bigger-110'&gt;I am a custom dialog with smaller buttons&lt;/span&gt;&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="11500:12676" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11554:11843" placeholder="{&quot;label&quot;: &quot;&lt;i class='icon-ok'&gt;&lt;/i&gt; Success!&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="11733:11821" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="11896:12162" placeholder="{&quot;label&quot;: &quot;Danger!&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="12049:12140" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="12214:12481" placeholder="{&quot;label&quot;: &quot;Click ME!&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="12370:12459" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="12534:12658" placeholder="{&quot;label&quot;: &quot;Just a button...&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="12940:13743" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="13215:13731" placeholder="{&quot;range&quot;: &quot;min&quot;...}" />
-                <marker date="1385299933000" expanded="true" signature="13577:13709" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="13782:14248" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="13817:14211" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="13936:14037" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14074:14197" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14285:14509" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14378:14451" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14588:14655" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14709:15875" placeholder="..." />
-                <marker date="1385299933000" expanded="true" signature="14734:15864" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="14830:15120" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="15191:15368" placeholder="{...}" />
-                <marker date="1385299933000" expanded="true" signature="15255:15356" placeholder="{&quot;railVisible&quot;: true...}" />
-                <marker date="1385299933000" expanded="true" signature="15380:15475" placeholder="/**e.preventDefault(); ...*/" />
-                <marker date="1385299933000" expanded="true" signature="15556:15855" placeholder="{&quot;connectWith&quot;: '.widget-container-span'...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="523" selection-end="523" vertical-scroll-proportion="-7.5">
-              <folding>
-                <marker date="1385231979000" expanded="true" signature="63:3918" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="100:174" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="232:3891" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="278:498" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="324:467" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="348:450" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="588:3856" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="625:3823" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="657:2850" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="733:879" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="980:2830" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1027:1141" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1165:1548" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1198:1524" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1243:1499" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1279:1393" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1572:1783" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1605:1759" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1807:2199" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1840:2175" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1885:2150" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="1921:2042" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2223:2603" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2256:2579" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2301:2554" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2337:2448" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2627:2808" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2660:2784" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2904:3805" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="2985:3232" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3034:3151" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3343:3783" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3366:3529" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3399:3505" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3598:3761" placeholder="..." />
-                <marker date="1385231979000" expanded="true" signature="3631:3737" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_menu.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="55" selection-start="1114" selection-end="1114" vertical-scroll-proportion="1.2367865">
+            <state line="118" column="39" selection-start="4745" selection-end="4745" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_shim.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html.erb">
+      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1384711322000" expanded="true" signature="4:125" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_navigationbar.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigationbar.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="65" selection-end="175" vertical-scroll-proportion="-1.875">
-              <folding>
-                <marker date="1385300761000" expanded="true" signature="59:395" placeholder="..." />
-                <marker date="1385300761000" expanded="true" signature="95:174" placeholder="..." />
-                <marker date="1385300761000" expanded="true" signature="203:366" placeholder="..." />
-                <marker date="1385300761000" expanded="true" signature="216:313" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="52" column="90" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.025641026">
               <folding />
             </state>
           </provider>
@@ -409,7 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$USER_HOME$/Google Drive/4. Projet-O/4. Réalisation/2. Cabinet/6. Thème/products-WB0B30DGR/ace-v1.2--bs-v3.0.0/index.html" />
         <option value="$PROJECT_DIR$/app/views/layouts/navigationbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_shim.html.erb" />
@@ -425,6 +143,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_navigationbar.html.erb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
@@ -436,10 +155,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-27" />
-    <option name="y" value="22" />
-    <option name="width" value="1399" />
-    <option name="height" value="858" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -467,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -611,24 +331,101 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="projeto" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="124" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="125" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="124" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="124" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Downloads/mysql-connector-java-5.1.24" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="129" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="923" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="129" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="923" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="923" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="129" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="125" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -643,9 +440,9 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1175,23 +972,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-27" y="22" width="1399" height="858" extended-state="0" />
+    <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22675934" sideWeight="0.80153847" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36444443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17738359" sideWeight="0.68988174" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18030304" sideWeight="0.6728395" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2979066" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31011826" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28640777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32611832" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3271605" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28549382" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32611832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1264,6 +1061,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/surveys.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1309,7 +1113,28 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="39" selection-start="4745" selection-end="4745" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="94" selection-start="859" selection-end="859" vertical-scroll-proportion="0.66237944">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1318,182 +1143,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="523" selection-end="523" vertical-scroll-proportion="-7.5">
-          <folding>
-            <marker date="1385231979000" expanded="true" signature="63:3918" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="100:174" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="232:3891" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="278:498" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="324:467" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="348:450" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="588:3856" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="625:3823" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="657:2850" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="733:879" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="980:2830" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1027:1141" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1165:1548" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1198:1524" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1243:1499" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1279:1393" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1572:1783" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1605:1759" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1807:2199" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1840:2175" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1885:2150" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="1921:2042" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2223:2603" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2256:2579" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2301:2554" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2337:2448" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2627:2808" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2660:2784" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2904:3805" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="2985:3232" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3034:3151" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3343:3783" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3366:3529" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3399:3505" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3598:3761" placeholder="..." />
-            <marker date="1385231979000" expanded="true" signature="3631:3737" placeholder="..." />
-          </folding>
+        <state line="14" column="38" selection-start="523" selection-end="523" vertical-scroll-proportion="0.025083613">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="90" selection-start="2825" selection-end="2825" vertical-scroll-proportion="30.0">
-          <folding>
-            <marker date="1385299933000" expanded="true" signature="49:2592" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="99:2585" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="144:2574" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="182:2559" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="248:2537" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="437:473" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="474:570" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="634:871" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="935:1084" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="1148:1300" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="1364:1613" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="1678:1955" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2058:2094" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2095:2196" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2380:2417" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2418:2513" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2611:5198" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2659:5189" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2700:5180" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2733:5169" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2826:5156" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2872:5141" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="2930:5124" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="5232:5686" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="5257:5673" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="5720:14676" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="5745:14665" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="5755:5903" placeholder="/**$('#myTab a[data-toggle=&quot;tab&quot;]').on('shown.bs.tab', function (e) { ...*/" />
-            <marker date="1385299933000" expanded="true" signature="5959:6205" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="6343:6698" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="6378:6650" placeholder="{&quot;trackColor&quot;: '#EEEEEE'...}" />
-            <marker date="1385299933000" expanded="true" signature="6861:7422" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="6889:7383" placeholder="{&quot;title&quot;: 'This is a regular notice!'...}" />
-            <marker date="1385299933000" expanded="true" signature="7485:8082" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="7529:8043" placeholder="{&quot;title&quot;: 'This is a sticky notice!'...}" />
-            <marker date="1385299933000" expanded="true" signature="8153:8774" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="8181:8735" placeholder="{&quot;title&quot;: 'This is a notice without an image!'...}" />
-            <marker date="1385299933000" expanded="true" signature="8836:9628" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="8864:9589" placeholder="{&quot;title&quot;: 'This is a notice with a max of 3 on screen at one time!'...}" />
-            <marker date="1385299933000" expanded="true" signature="9300:9464" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="9385:9446" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="9692:10084" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="9720:10045" placeholder="{&quot;title&quot;: 'This is a centered notification'...}" />
-            <marker date="1385299933000" expanded="true" signature="10146:10522" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="10174:10483" placeholder="{&quot;title&quot;: 'This is a warning notification'...}" />
-            <marker date="1385299933000" expanded="true" signature="10586:10658" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="10742:11035" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="10810:11023" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="10849:10924" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="10930:11009" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11100:11261" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11164:11249" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11193:11235" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11326:12702" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11355:12690" placeholder="{&quot;message&quot;: &quot;&lt;span class='bigger-110'&gt;I am a custom dialog with smaller buttons&lt;/span&gt;&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="11500:12676" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11554:11843" placeholder="{&quot;label&quot;: &quot;&lt;i class='icon-ok'&gt;&lt;/i&gt; Success!&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="11733:11821" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="11896:12162" placeholder="{&quot;label&quot;: &quot;Danger!&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="12049:12140" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="12214:12481" placeholder="{&quot;label&quot;: &quot;Click ME!&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="12370:12459" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="12534:12658" placeholder="{&quot;label&quot;: &quot;Just a button...&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="12940:13743" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="13215:13731" placeholder="{&quot;range&quot;: &quot;min&quot;...}" />
-            <marker date="1385299933000" expanded="true" signature="13577:13709" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="13782:14248" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="13817:14211" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="13936:14037" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14074:14197" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14285:14509" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14378:14451" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14588:14655" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14709:15875" placeholder="..." />
-            <marker date="1385299933000" expanded="true" signature="14734:15864" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="14830:15120" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="15191:15368" placeholder="{...}" />
-            <marker date="1385299933000" expanded="true" signature="15255:15356" placeholder="{&quot;railVisible&quot;: true...}" />
-            <marker date="1385299933000" expanded="true" signature="15380:15475" placeholder="/**e.preventDefault(); ...*/" />
-            <marker date="1385299933000" expanded="true" signature="15556:15855" placeholder="{&quot;connectWith&quot;: '.widget-container-span'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="39" selection-start="4745" selection-end="4745" vertical-scroll-proportion="-10.408163">
-          <folding>
-            <marker date="1385257747000" expanded="true" signature="21:4766" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="32:3666" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="439:539" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="1321:1415" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="1480:1578" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="3482:3649" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="3717:4757" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="3817:4719" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="3861:3959" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="4006:4442" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="4074:4145" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="4234:4399" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="4494:4703" placeholder="..." />
-            <marker date="1385257747000" expanded="true" signature="4588:4683" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1384711322000" expanded="true" signature="4:125" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigationbar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="65" selection-end="175" vertical-scroll-proportion="-1.875">
-          <folding>
-            <marker date="1385300761000" expanded="true" signature="59:395" placeholder="..." />
-            <marker date="1385300761000" expanded="true" signature="95:174" placeholder="..." />
-            <marker date="1385300761000" expanded="true" signature="203:366" placeholder="..." />
-            <marker date="1385300761000" expanded="true" signature="216:313" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="55" selection-start="1114" selection-end="1114" vertical-scroll-proportion="1.2367865">
+        <state line="52" column="90" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.025641026">
           <folding />
         </state>
       </provider>
