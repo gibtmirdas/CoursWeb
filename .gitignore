@@ -18,3 +18,4 @@
 # Custom ignored files
 # db config
 /config/database.yml
+/.idea
