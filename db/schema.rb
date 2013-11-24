@@ -11,17 +11,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131103112413) do
+ActiveRecord::Schema.define(version: 20131122124901) do
+
+  create_table "answers", force: true do |t|
+    t.boolean  "presence"
+    t.text     "response"
+    t.integer  "personne_id"
+    t.integer  "introduction_question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "format_questions", force: true do |t|
+    t.boolean  "has_value"
+    t.string   "value_format"
+    t.boolean  "women"
+    t.boolean  "required"
+    t.string   "introduction_question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "introduction_questions", force: true do |t|
     t.integer  "idQuestion"
     t.string   "tag"
     t.text     "question"
+    t.boolean  "woman"
+    t.boolean  "has_comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "personnes", force: true do |t|
+    t.integer  "personne_id"
     t.string   "familyName"
     t.string   "maiderName"
     t.string   "firstName"
@@ -31,12 +53,13 @@ ActiveRecord::Schema.define(version: 20131103112413) do
     t.string   "civilStatus"
     t.string   "address"
     t.string   "city"
-    t.integer  "zipCode"
+    t.string   "zipCode"
     t.string   "co"
-    t.integer  "privatePhone"
-    t.integer  "profPhone"
+    t.string   "privatePhone"
+    t.string   "profPhone"
     t.string   "illnessInsurance"
     t.string   "additionnalInsurance"
+    t.boolean  "sex"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "type"
@@ -47,39 +70,6 @@ ActiveRecord::Schema.define(version: 20131103112413) do
     t.string   "employerAddress"
   end
 
-  create_table "surveys", force: true do |t|
-    t.integer  "patient_id"
-    t.text     "q1"
-    t.text     "q2"
-    t.text     "q3"
-    t.text     "q3a"
-    t.text     "q4"
-    t.text     "q5"
-    t.text     "q6"
-    t.text     "q7"
-    t.text     "q8"
-    t.text     "q8a"
-    t.text     "q8b"
-    t.text     "q8c"
-    t.text     "q8d"
-    t.text     "q8e"
-    t.text     "q8f"
-    t.text     "q8g"
-    t.text     "q8h"
-    t.text     "q8i"
-    t.text     "q8j"
-    t.text     "q8k"
-    t.text     "q8l"
-    t.text     "q9"
-    t.text     "q10"
-    t.text     "q11"
-    t.text     "q12"
-    t.text     "q13"
-    t.text     "q14"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "surveys", ["patient_id"], name: "index_surveys_on_patient_id", using: :btree
+  add_index "personnes", ["personne_id"], name: "index_personnes_on_personne_id", using: :btree
 
 end

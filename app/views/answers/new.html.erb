@@ -1,0 +1,5 @@
+<h1>New survey for <%= @patient.firstName%> <%=@patient.familyName %></h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', answer_path(1) %>

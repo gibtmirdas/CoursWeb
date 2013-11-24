@@ -49,7 +49,7 @@ class PersonnesController < ApplicationController
 		respond_to do |format|
 			if @personne.save
 				if @personne.instance_of?(Patient)
-					format.html { redirect_to :controller => 'surveys', :action => 'new',:patient_id => @personne.id, notice: 'Personne was successfully created.'}
+					format.html { redirect_to :action => 'create_survey',:personne_id => @personne.id, notice: 'Personne was successfully created.'}
 					format.json { render action: 'show', status: :created, location: @personne }
 				else
 					format.html { redirect_to @personne, notice: 'Personne was successfully created.'}
@@ -86,6 +86,24 @@ class PersonnesController < ApplicationController
 		end
 	end
 
+	### Survey for Patient ###
+	def create_survey
+		@patient = Personne.find(params[:personne_id])
+		if Answer.where(:personne_id => params[:personne_id]).empty?
+			questions = IntroductionQuestion.all
+			answers = Array.new(questions.size){@patient.answers.build}
+			count = 0
+			answers.each do |a|
+				questions[count].answers << a
+				count += 1
+			end
+		end
+	end
+
+	def save_survey
+		redirect_to @personne, notice: 'Survey was successfully created.'
+	end
+
 	private
 	# Use callbacks to share common setup or constraints between actions.
 	def set_personne
@@ -98,15 +116,15 @@ class PersonnesController < ApplicationController
 			params.require(:patient).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                                :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
 			                                :illnessInsurance, :additionnalInsurance, :referedBy, :legalCaregiver,
-			                                :trade, :employer, :employerAddress)
+			                                :trade, :employer, :employerAddress, :sex)
 		elsif params[:staff] != nil
 			params.require(:staff).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                              :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
-			                              :illnessInsurance, :additionnalInsurance)
+			                              :illnessInsurance, :additionnalInsurance, :sex)
 		elsif params[:personne] != nil
 			params.require(:personne).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                                 :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
-			                                 :illnessInsurance, :additionnalInsurance)
+			                                 :illnessInsurance, :additionnalInsurance, :sex)
 		end
 
 	end
