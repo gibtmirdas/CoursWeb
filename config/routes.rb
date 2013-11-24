@@ -6,8 +6,7 @@ Projeto::Application.routes.draw do
 	resources :patients,    :controller => 'personnes',     :type => 'patient'
 	resources :staffs,      :controller => 'personnes',     :type => 'staff'
 	resources :answers
-	match 'create_survey',     to: 'personnes#create_survey',    via: 'get'
-	match 'save_survey',     to: 'personnes#save_survey',    via: 'post'
+	match 'add_survey',     to: 'answers#add_survey',    via: 'post'
 
 	get 'static_pages/home'
 	get 'introduction_question/create'

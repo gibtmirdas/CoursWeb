@@ -49,7 +49,7 @@ class PersonnesController < ApplicationController
 		respond_to do |format|
 			if @personne.save
 				if @personne.instance_of?(Patient)
-					format.html { redirect_to :action => 'create_survey',:personne_id => @personne.id, notice: 'Personne was successfully created.'}
+					format.html { redirect_to :controller => 'answers',:action => 'new',:personne_id => @personne.id, notice: 'Personne was successfully created.'}
 					format.json { render action: 'show', status: :created, location: @personne }
 				else
 					format.html { redirect_to @personne, notice: 'Personne was successfully created.'}

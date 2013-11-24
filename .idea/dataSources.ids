@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.32-0ubuntu0.13.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="3572154c-4047-4d96-9725-b002af007688">
+  <data-source source="LOCAL" name="Data Source" product="MySQL" version="5.5.34-0ubuntu0.13.10.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="3572154c-4047-4d96-9725-b002af007688">
     <extra-name-characters>#@</extra-name-characters>
     <identifier-quote-string>`</identifier-quote-string>
     <synchronize>true</synchronize>
@@ -16,6 +16,8 @@
         <url>file://$PROJECT_DIR$/../../../Downloads/mysql-connector-java-5.1.24/mysql-connector-license.txt</url>
       </library>
     </libraries>
+    <schema name="" catalog="Harley_development"/>
+    <schema name="" catalog="Harley_test"/>
     <schema name="" catalog="ScalaProject"/>
     <schema name="" catalog="blogTest_development"/>
     <schema name="" catalog="blogTest_test"/>
@@ -27,6 +29,23 @@
     <schema name="" catalog="phpmyadmin"/>
     <schema name="" catalog="projeto_development"/>
     <schema name="" catalog="projeto_test"/>
+    <schema name="" catalog="test"/>
+    <table name="members" schema="" catalog="Harley_development" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="username" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="password_digest" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="firstName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="lastName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="dateOfBirth" sqlType="DATE" length="10" precision="0" nullable="true" jdbcType="91"/>
+      <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="schema_migrations" schema="" catalog="Harley_development" type="TABLE">
+      <column name="version" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <index name="unique_schema_migrations" unique="true" columns="version"/>
+    </table>
     <table name="play_evolutions" schema="" catalog="ScalaProject" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <column name="hash" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
@@ -1285,17 +1304,41 @@
       <column name="config_data" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
       <primary-key name="PRIMARY" columns="username"/>
     </table>
+    <table name="answers" schema="" catalog="projeto_development" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="presence" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="response" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="personne_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="introduction_question_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="format_questions" schema="" catalog="projeto_development" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="has_value" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="value_format" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="women" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="required" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="introduction_question_id" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="introduction_questions" schema="" catalog="projeto_development" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="idQuestion" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="tag" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="question" sqlType="TEXT" length="65535" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="woman" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
+      <column name="has_comment" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
       <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="personnes" schema="" catalog="projeto_development" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="personne_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
       <column name="familyName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="maiderName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="firstName" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
@@ -1305,12 +1348,13 @@
       <column name="civilStatus" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="address" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="city" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="zipCode" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="zipCode" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="co" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
-      <column name="privatePhone" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
-      <column name="profPhone" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="privatePhone" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="profPhone" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="illnessInsurance" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="additionnalInsurance" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="sex" sqlType="BIT" length="0" precision="0" nullable="true" jdbcType="-7"/>
       <column name="created_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
       <column name="type" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
@@ -1320,6 +1364,7 @@
       <column name="employer" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="employerAddress" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <index name="index_personnes_on_personne_id" unique="false" columns="personne_id"/>
     </table>
     <table name="schema_migrations" schema="" catalog="projeto_development" type="TABLE">
       <column name="version" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
@@ -1330,6 +1375,7 @@
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1/projeto_production</jdbc-url>
     <user-name>root</user-name>
+    <user-password>dfc1dfc5dfd8dfc4df9cdf9bdf9fdf9f</user-password>
     <libraries>
       <library>
         <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
@@ -1343,6 +1389,7 @@
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1/projeto_test</jdbc-url>
     <user-name>root</user-name>
+    <user-password>dfc1dfc5dfd8dfc4df9cdf9bdf9fdf9f</user-password>
     <libraries>
       <library>
         <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
@@ -1356,6 +1403,7 @@
     <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
     <jdbc-url>jdbc:mysql://127.0.0.1/projeto_development</jdbc-url>
     <user-name>root</user-name>
+    <user-password>dfc1dfc5dfd8dfc4df9cdf9bdf9fdf9f</user-password>
     <libraries>
       <library>
         <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>

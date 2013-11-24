@@ -34,39 +34,30 @@ class AnswersController < ApplicationController
 	# POST /answers
 	# POST /answers.json
 	def create
-		#patient_id = params[:patient_id]
-		#@answer = Survey.new(answer_params)
-		#patientTmp = Patient.find(patient_id)
-		#@answer.patient = patientTmp
-		#@answer.patient_id= patientTmp.id
-		#
-		#@questions = IntroductionQuestion.all
 
-		#respond_to do |format|
-		#	if @answer.save
-		#		format.html { redirect_to @answer, notice: 'Survey was successfully created.' }
-		#		format.json { render action: 'show', status: :created, location: @answer }
-		#	else
-		#		format.html { render action: 'new' }
-		#		format.json { render json: @answer.errors, status: :unprocessable_entity }
-		#	end
-		#end
-		redirect_to @patient, notice: 'Survey was successfully created.'
+		respond_to do |format|
+			if @answer.save
+				format.html { redirect_to @answer, notice: 'Survey was successfully created.' }
+				format.json { render action: 'show', status: :created, location: @answer }
+			else
+				format.html { render action: 'new' }
+				format.json { render json: @answer.errors, status: :unprocessable_entity }
+			end
+		end
 	end
 
 	# PATCH/PUT /answers/1
 	# PATCH/PUT /answers/1.json
 	def update
-		#respond_to do |format|
-		#	if @answer.update(answer_params)
-		#		format.html { redirect_to @answer, notice: 'Survey was successfully updated.' }
-		#		format.json { head :no_content }
-		#	else
-		#		format.html { render action: 'edit' }
-		#		format.json { render json: @answer.errors, status: :unprocessable_entity }
-		#	end
-		#end
-		redirect_to @patient, notice: 'Survey was successfully updated.'
+		respond_to do |format|
+			if @answer.update(answer_params)
+				format.html { redirect_to @answer, notice: 'Survey was successfully updated.' }
+				format.json { head :no_content }
+			else
+				format.html { render action: 'edit' }
+				format.json { render json: @answer.errors, status: :unprocessable_entity }
+			end
+		end
 	end
 
 	# DELETE /answers/1
@@ -80,6 +71,17 @@ class AnswersController < ApplicationController
 
 	end
 
+	def add_survey
+		patientNew = Patient.new(answer_params);
+		patient = Patient.find(params[:idPatient])
+		patientNew.answers.each do |a|
+			var = Answer.where(:personne_id => a.id)
+			var.update_attributes(:presence => 'true', :response => 'blabla')
+		end
+		@f = params[:idPatient]
+		@p = 5
+	end
+
 	private
 	# Use callbacks to share common setup or constraints between actions.
 	def set_answer
@@ -88,5 +90,9 @@ class AnswersController < ApplicationController
 
 	# Never trust parameters from the scary internet, only allow the white list through.
 	def answer_params
+			params.require(:patient).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
+			                                :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
+			                                :illnessInsurance, :additionnalInsurance, :referedBy, :legalCaregiver,
+			                                :trade, :employer, :employerAddress, :sex, :answer)
 	end
 end

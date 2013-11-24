@@ -1,5 +1,4 @@
-
-<%= form_for @patient, url: patients_path(@patient), method: :post do |f| %>
+<%= form_for @patient, :url => add_survey_path(:idPatient => @patient.id ) , method: :post do |f| %>
     <% count=0%>
     <% beforeNoField = false %>
     <table>
