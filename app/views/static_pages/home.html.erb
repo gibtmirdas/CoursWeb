@@ -1,13 +1,12 @@
 <% provide(:title, 'Bureau') %>
-
 <div class="row">
-    <div class="col-xs-12 widget-container-span">
-        <div class="widget-box transparent">
-            <div class="widget-body">
-                <form class="form-group no-margin-bottom center">
-                    <button class="btn btn-success btn-xs no-radius tooltip-success align-middle" type="button" data-rel="tooltip" data-placement="left" title="Ajouter un patient" style="padding-bottom: 3px;padding-top: 8px">
-                        <i class="icon-plus-sign bigger-180"></i>
-                    </button>
+  <div class="col-xs-12 widget-container-span">
+    <div class="widget-box transparent">
+      <div class="widget-body">
+        <form class="form-group no-margin-bottom center">
+          <button class="btn btn-success btn-xs no-radius tooltip-success align-middle" type="button" data-rel="tooltip" data-placement="left" title="Ajouter un patient" style="padding-bottom: 3px;padding-top: 8px">
+            <i class="icon-plus-sign bigger-180"></i>
+          </button>
 
                     <span class="input-icon input-icon-right">
                         <input class="input-sm input-small input-lg input-mask-patient form-control" type="text" id="form-field-1" placeholder="N° Patient" />
@@ -32,18 +31,18 @@
                         <i class="icon-gift"></i>
                     </span>
 
-                    <button class="btn btn-xs btn-info no-radius align-middle" type="button" style="padding-bottom: 3px;padding-top: 8px" >
-                        <i class="icon-search bigger-180 center"></i>
-                    </button>
+          <button class="btn btn-xs btn-info no-radius align-middle" type="button" style="padding-bottom: 3px;padding-top: 8px" >
+            <i class="icon-search bigger-180 center"></i>
+          </button>
 
-                    <button class="btn btn-xs  btn-info no-radius tooltip-info align-bottom" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset" style="padding-bottom: 3px; padding-top: 3px">
-                        <i class=" icon-refresh bigger-130"></i>
-                    </button>
-                </form>
+          <button class="btn btn-xs  btn-info no-radius tooltip-info align-bottom" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset" style="padding-bottom: 3px; padding-top: 3px">
+            <i class=" icon-refresh bigger-130"></i>
+          </button>
+        </form>
 
-              </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="row">
@@ -52,15 +51,180 @@
       <div class="widget-body ">
         <div class="widget-main padding-12 no-padding-left no-padding-right no-padding-top">
           <div class="tab-content padding-4">
-              <div class="slim-scroll" data-height="150">
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
-                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo massa sed ipsum porttitor facilisis. Nullam interdum massa vel nisl fringilla sed viverra erat tincidunt. Phasellus in ipsum velit. Maecenas id erat vel sem convallis blandit. Nunc aliquam enim ut arcu aliquet adipiscing. Fusce dignissim volutpat justo non consectetur.
+            <div class="slim-scroll" data-height="150">
 
+
+              <div id="profile-feed-1" class="profile-feed">
+                <div class="profile-activity clearfix">
+                  <div>
+                    <img class="pull-left" alt="Alex Doe's avatar" src="assets/avatars/avatar5.png" />
+                    <a class="user" href="#"> Alex Doe </a>
+                    changed his profile photo.
+                    <a href="#">Take a look</a>
+
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      an hour ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <img class="pull-left" alt="Susan Smith's avatar" src="assets/avatars/avatar1.png" />
+                    <a class="user" href="#"> Susan Smith </a>
+
+                    is now friends with Alex Doe.
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      2 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <i class="pull-left thumbicon icon-ok btn-success no-hover"></i>
+                    <a class="user" href="#"> Alex Doe </a>
+                    joined
+                    <a href="#">Country Music</a>
+
+                    group.
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      5 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <i class="pull-left thumbicon icon-picture btn-info no-hover"></i>
+                    <a class="user" href="#"> Alex Doe </a>
+                    uploaded a new photo.
+                    <a href="#">Take a look</a>
+
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      5 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <i class="pull-left thumbicon icon-key btn-info no-hover"></i>
+                    <a class="user" href="#"> Alex Doe </a>
+
+                    logged in.
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      12 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <i class="pull-left thumbicon icon-off btn-inverse no-hover"></i>
+                    <a class="user" href="#"> Alex Doe </a>
+
+                    logged out.
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      16 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="profile-activity clearfix">
+                  <div>
+                    <i class="pull-left thumbicon icon-key btn-info no-hover"></i>
+                    <a class="user" href="#"> Alex Doe </a>
+
+                    logged in.
+                    <div class="time">
+                      <i class="icon-time bigger-110"></i>
+                      16 hours ago
+                    </div>
+                  </div>
+
+                  <div class="tools action-buttons">
+                    <a href="#" class="blue">
+                      <i class="icon-pencil bigger-125"></i>
+                    </a>
+
+                    <a href="#" class="red">
+                      <i class="icon-remove bigger-125"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
+
+
+            </div>
           </div>
         </div>
       </div>
