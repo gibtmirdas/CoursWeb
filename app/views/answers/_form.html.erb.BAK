@@ -1,40 +1,68 @@
-<%= form_for @patient, url: patients_path(@patient), method: :post do |f| %>
-    <% count=1%>
-    <%= f.fields_for :answers do |builder| %>
-        <%q = IntroductionQuestion.where(:idQuestion =>  count).limit(1).first  %>
-
-        <% if q.tag.match(/[a-z]+/) %><% style='margin-left: 30px;'%><%else%><% style=''%><% end %>
-
-        <div class="field"  style="<%=style%>">
-            <%= q.tag %> <%= q.question %>
-            <% if q.has_comment %>
-                <% tmp = count-1 %>
-                <% if q.tag != '' %>
-                    <p><%= builder.check_box :presence  %> Oui</p>
-                    <% tmp += 1 %>
-                <% end %>
-
-                <div id='area<%=tmp.to_s%>' >
-                    <!-- change attribut presence of current answer, beacause it is not showed -->
-                    <p><%= builder.text_area :response %></p>
-                </div>
-            <% else %>
-                <p><%= builder.check_box :presence  %> Oui</p>
-            <% end %>
+<%= form_for @patient, :url => add_survey_path(:idPatient => @patient.id ) , method: :post do |f| %>
+    <% count=0%>
+    <% beforeNoField = false %>
+    <table>
+        <%= f.fields_for :answers do |builder| %>
             <% count += 1 %>
-        </div>
-    <% end %>
+            <% tmp = count %>
+            <!-- Get introductionQuestion associated to current answer -->
+            <%q = IntroductionQuestion.where(:idQuestion =>  count).limit(1).first  %>
+
+            <% if !(!@patient.sex && q.format_question.women) %>
+
+                <!-- Add margin-left for subQuestions-->
+                <% if q.tag.match(/[a-z]+/) %><% style='margin-left: 30px;'%><%else%><% style=''%><% end %>
+                <% if q.format_question.required %>
+                    <div class="field"  style="<%=style%>">
+                        <%= q.tag %> <%= q.question %>
+                        <%=render partial: 'question', locals: {q: q.format_question.value_format, builder: builder, patient: @patient} %>
+                        <!-- change attribute presence of current answer, because it is not showed -->
+                    </div>
+                <% else %>
+                    <div class="field"  style="<%=style%>">
+                        <% if !beforeNoField %>
+                            <% if q.has_comment%>
+                                <%= q.tag %> <%= q.question %>
+                                <p><%= builder.check_box :presence  %> Oui</p>
+                                <div id='area<%= tmp.to_s %>' >
+                                <%=render partial: 'question', locals: {q: q.format_question.value_format, builder: builder, patient: @patient} %>
+                                </div>
+                            <% else %>
+                                <%= q.tag %> <%= q.question %>
+                                <p><%= builder.check_box :presence  %> Oui</p>
+                                <% beforeNoField = true %>
+                            <% end %>
+                        <% else %>
+                            <div id='area<%= (tmp-1).to_s %>' >
+                                <!-- change attribute presence of current answer, because it is not showed -->
+                                <%= q.tag %> <%= q.question %>
+                                <%=render partial: 'question', locals: {q: q.format_question.value_format, builder: builder, patient: @patient} %>
+                            </div>
+                            <% beforeNoField = false %>
+                        <% end %>
+                    </div>
+                <% end %>
+            <% end %>
+        <% end %>
+    </table>
 
     <%= f.submit 'Submit'%>
 <% end %>
-
 <script>
-
     var allInputs = document.getElementsByTagName("input");
     for (var i = 0, max = allInputs.length; i < max; i++){
-        if (allInputs[i].type === 'checkbox')
+        if (allInputs[i].type === 'checkbox'){
+
+            // Add function on checkBoxes: checked => show question related area
             allInputs[i].addEventListener('click', ev_button_change, false);
+
+            // Hide all questions areas
+            var a =parseInt(allInputs[i].id.split("_")[3]) + 1;
+            $("#area"+a).hide();
+        }
     }
+
+    // Hide or show question area related to checkbox 'ev'
     function ev_button_change (ev) {
         var a =parseInt(ev.target.id.split("_")[3]);
         a +=1;

@@ -72,14 +72,30 @@ class AnswersController < ApplicationController
 	end
 
 	def add_survey
-		patientNew = Patient.new(answer_params);
-		patient = Patient.find(params[:idPatient])
-		patientNew.answers.each do |a|
-			var = Answer.where(:personne_id => a.id)
-			var.update_attributes(:presence => 'true', :response => 'blabla')
+		@patient = Patient.find(params[:idPatient])
+		@answers = params[:patient][:answers_attributes]
+		count = 1
+		@answers.each do |a|
+			tmp = Answer.where(:personne_id => params[:idPatient], :introduction_question_id => count).first
+			# Get presence and response
+			presence_tmp = a[1][:presence]
+			response_tmp = ''
+			if a[1].has_key?('response') && a[1][:response] != ''
+				presence_tmp = true
+				response_tmp = a[1][:response]
+			end
+
+			tmp.update_attributes(:presence => presence_tmp, :response=> response_tmp)
+			count += 1
+
 		end
-		@f = params[:idPatient]
-		@p = 5
+		#answers = params[:patient][:answers_attributes]
+		#answers.each do |a|
+		#	answerTmp = a[1]
+		#	truk = answerTmp[:id]
+		#	#ans.find_or_create_by
+		#	#ans.update_attributes answers_attributes: {:introduction_question_id=>'1', :presence=> 1, :response=> 'blabla'}
+		#end
 	end
 
 	private
@@ -90,9 +106,18 @@ class AnswersController < ApplicationController
 
 	# Never trust parameters from the scary internet, only allow the white list through.
 	def answer_params
-			params.require(:patient).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
-			                                :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
-			                                :illnessInsurance, :additionnalInsurance, :referedBy, :legalCaregiver,
-			                                :trade, :employer, :employerAddress, :sex, :answer)
+		params.require(:patient).permit(answers_attributes: [:presence, :response, :id,:personne_id, :_destroy])
+	end
+
+	def date_from_date_select_fields(params, name)
+		parts = (1..6).map do |e|
+			params["#{name}(#{e}i)"].to_i
+		end
+
+		# remove trailing zeros
+		parts = parts.slice(0, parts.rindex{|e| e != 0}.to_i + 1)
+		return nil if parts[0] == 0  # empty date fields set
+
+		Date.new(*parts)
 	end
 end

@@ -3,5 +3,5 @@
 <% elsif q == 'integer' %>
     <p><%= builder.text_field :response %></p>
 <% elsif q == 'date' %>
-    <%= builder.date_select(:response,:start_year => Time.now.year,:end_year => Time.now.year - 1) %>
+    <p><%= builder.text_field(:response,:class=>'input-mask-date',:placeholder=>'dd-mm-yyyy') %></p>
 <% end %>

@@ -116,15 +116,15 @@ class PersonnesController < ApplicationController
 			params.require(:patient).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                                :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
 			                                :illnessInsurance, :additionnalInsurance, :referedBy, :legalCaregiver,
-			                                :trade, :employer, :employerAddress, :sex)
+			                                :trade, :employer, :employerAddress, :sex,answers_attributes: [:presence, :response, :id, :_destroy])
 		elsif params[:staff] != nil
 			params.require(:staff).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                              :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
-			                              :illnessInsurance, :additionnalInsurance, :sex)
+			                              :illnessInsurance, :additionnalInsurance, :sex,answers_attributes: [:presence, :response, :id, :_destroy])
 		elsif params[:personne] != nil
 			params.require(:personne).permit(:familyName, :maiderName, :firstName, :dateOfBirth, :email, :nationality,
 			                                 :civilStatus, :address, :city, :zipCode, :co, :privatePhone, :profPhone,
-			                                 :illnessInsurance, :additionnalInsurance, :sex)
+			                                 :illnessInsurance, :additionnalInsurance, :sex,answers_attributes: [:presence, :response, :id, :_destroy])
 		end
 
 	end

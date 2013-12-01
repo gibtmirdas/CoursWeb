@@ -25,7 +25,7 @@
                                 <%= q.tag %> <%= q.question %>
                                 <p><%= builder.check_box :presence  %> Oui</p>
                                 <div id='area<%= tmp.to_s %>' >
-                                <%=render partial: 'question', locals: {q: q.format_question.value_format, builder: builder, patient: @patient} %>
+                                    <%=render partial: 'question', locals: {q: q.format_question.value_format, builder: builder, patient: @patient} %>
                                 </div>
                             <% else %>
                                 <%= q.tag %> <%= q.question %>
@@ -54,7 +54,7 @@
         if (allInputs[i].type === 'checkbox'){
 
             // Add function on checkBoxes: checked => show question related area
-            allInputs[i].addEventListener('click', ev_button_change, false);
+            allInputs[i].addEventListener('change', ev_button_change, false);
 
             // Hide all questions areas
             var a =parseInt(allInputs[i].id.split("_")[3]) + 1;
@@ -71,4 +71,33 @@
         }else
             $("#area"+a).hide(300);
     }
+    window.onload = function(){
+        var allInputs = document.getElementsByTagName("input");
+        alert('Bitch'+allInputs);
+        for (var i = 0, max = allInputs.length; i < max; i++){
+            if (allInputs[i].type === 'checkbox'){
+
+                // Hide all questions areas
+                var a =parseInt(allInputs[i].id.split("_")[3]) + 1;
+                if(allInputs[i].checked)
+                    $("#area"+a).show(300);
+                else
+                    $("#area"+a).hide(300);
+            }
+        }
+    };
+</script>
+
+<script type="text/javascript">
+    jQuery(function($) {
+        $.mask.definitions['~']='[+-]';
+        $('.input-mask-date').mask('99/99/9999');
+        $('.input-mask-phone').mask('(+99) 99 - 999 - 99 - 99');
+        $('.input-mask-eyescript').mask('~9.99 ~9.99 999');
+        $('.input-mask-patient').mask('p-99-9999');
+        $(".input-mask-product").mask("a*-999-a999",{placeholder:" ",completed:function(){alert("You typed the following: "+this.val());}});
+
+    });
+
+
 </script>

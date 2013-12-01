@@ -14,7 +14,7 @@ development:
   database: projeto_development
   pool: 5
   username: root
-  password:
+  password: korn6155
   host : localhost
 #  socket: /var/run/mysqld/mysqld.sock
 
@@ -27,7 +27,7 @@ test:
   database: projeto_test
   pool: 5
   username: root
-  password:
+  password: korn6155
   host : localhost
 #  socket: /var/run/mysqld/mysqld.sock
 
@@ -37,6 +37,6 @@ production:
   database: projeto_production
   pool: 5
   username: root
-  password:
+  password: korn6155
   host : localhost
 #  socket: /var/run/mysqld/mysqld.sock
