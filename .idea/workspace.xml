@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/personnes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/personnes/index.html.erb" />
+    <list default="true" id="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" name="Default" comment="Saving survey answers">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projeto.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385995428733" ignored="false" />
+    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385996940773" ignored="false" />
     <file path="/.gitignore" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385323855391" ignored="false" />
     <file path="/database.yml" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385311911770" ignored="false" />
     <file path="/application_helper.rb" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1380994910452" ignored="false" />
@@ -99,7 +98,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/personnes/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="17" selection-start="365" selection-end="365" vertical-scroll-proportion="0.375">
+            <state line="19" column="75" selection-start="401" selection-end="401" vertical-scroll-proportion="0.47658864">
               <folding />
             </state>
           </provider>
@@ -1104,7 +1103,11 @@
       <created>1385893712844</created>
       <updated>1385893712844</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Saving survey answers">
+      <created>1385996886471</created>
+      <updated>1385996886471</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1131,6 +1134,7 @@
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14772727" sideWeight="0.71450615" order="3" side_tool="false" content_ui="tabs" />
@@ -1145,7 +1149,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3246154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1307,7 +1310,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/personnes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="365" selection-end="365" vertical-scroll-proportion="0.375">
+        <state line="19" column="75" selection-start="401" selection-end="401" vertical-scroll-proportion="0.47658864">
           <folding />
         </state>
       </provider>
