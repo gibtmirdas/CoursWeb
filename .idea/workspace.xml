@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/personnes/index.html.erb" afterPath="$PROJECT_DIR$/app/views/personnes/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="projeto.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385893657694" ignored="false" />
+    <file path="/Dummy.txt" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385995428733" ignored="false" />
     <file path="/.gitignore" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385323855391" ignored="false" />
     <file path="/database.yml" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1385311911770" ignored="false" />
     <file path="/application_helper.rb" changelist="96e463e1-5e9d-497a-b92e-b3db32e8f6ab" time="1380994910452" ignored="false" />
@@ -85,7 +86,26 @@
     <favorites_list name="projeto" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="answers_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/answers_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="50" selection-start="1683" selection-end="1701" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/personnes/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="17" selection-start="365" selection-end="365" vertical-scroll-proportion="0.375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -117,11 +137,11 @@
         <option value="dbtable:/7e139794/3572154c-4047-4d96-9725-b002af007688/projeto_development..answers" />
         <option value="$PROJECT_DIR$/app/views/answers/_form.html.erb.BAK" />
         <option value="dbtable:/7e139794/3572154c-4047-4d96-9725-b002af007688/projeto_development..introduction_questions" />
-        <option value="$PROJECT_DIR$/app/views/personnes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/answers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/answers/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/answers/_question.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/personnes/index.html.erb" />
       </list>
     </option>
   </component>
@@ -164,7 +184,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="Scope">
         <subPane subId="Default">
           <PATH>
@@ -301,6 +320,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -952,15 +972,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: projeto" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: projeto" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:seed" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.db:drop" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:create" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:seed" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.db:drop" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Production: projeto" />
+      <item index="8" class="java.lang.String" itemvalue="Rails.Development: projeto" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1080,7 +1100,11 @@
       <created>1385893661551</created>
       <updated>1385893661552</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Saving survey answers">
+      <created>1385893712844</created>
+      <updated>1385893712844</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1105,14 +1129,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32561728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32561728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22651514" sideWeight="0.6743827" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14772727" sideWeight="0.71450615" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36444443" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19242424" sideWeight="0.6743827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19848485" sideWeight="0.71450615" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47692308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28549382" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -1122,6 +1145,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3246154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1212,16 +1236,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/answers/add_survey.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="22" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/answers/_form.html.erb.BAK">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="66" selection-start="0" selection-end="3431" vertical-scroll-proportion="0.21446384">
-          <folding />
-        </state>
+        <state line="54" column="66" selection-start="0" selection-end="3431" vertical-scroll-proportion="0.21446384" />
       </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -1229,37 +1249,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/personnes/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/personnes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.9928741">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.9928741" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/personnes/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/personnes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="75" selection-start="962" selection-end="962" vertical-scroll-proportion="0.77205884">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/personnes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="144" selection-start="3381" selection-end="3381" vertical-scroll-proportion="2.6388888">
-          <folding />
-        </state>
+        <state line="118" column="144" selection-start="3381" selection-end="3381" vertical-scroll-proportion="2.6388888" />
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/7e139794/3572154c-4047-4d96-9725-b002af007688/projeto_development..introduction_questions">
@@ -1267,9 +1272,7 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/7e139794/3572154c-4047-4d96-9725-b002af007688/projeto_development..answers">
@@ -1277,35 +1280,34 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/answers/_question.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="231" selection-end="231" vertical-scroll-proportion="0.18382353">
-          <folding />
-        </state>
+        <state line="5" column="64" selection-start="231" selection-end="231" vertical-scroll-proportion="0.18382353" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/answers/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="12" selection-start="4085" selection-end="4100" vertical-scroll-proportion="3.0220587">
-          <folding />
-        </state>
+        <state line="93" column="12" selection-start="4085" selection-end="4100" vertical-scroll-proportion="3.0220587" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.5147059">
-          <folding />
-        </state>
+        <state line="23" column="43" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.5147059" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/answers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="44" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.5208333">
+        <state line="74" column="50" selection-start="1683" selection-end="1701" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/personnes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="365" selection-end="365" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>
