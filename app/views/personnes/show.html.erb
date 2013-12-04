@@ -78,7 +78,7 @@
 <p>
     <!-- @TODO edit link -->
     <% if @personne.type == 'Patient'%>
-        <strong><%= link_to 'Survey', personne_path %>
+        <strong><%= link_to 'Survey', controller: 'answers', action: 'new', personne_id: @personne.id %>
         </strong>
     <% end %>
 </p>

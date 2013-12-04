@@ -1,14 +1,6 @@
 #encoding: utf-8
 
-# Add temporary patient
-
-Staff.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'0' )
-Patient.create(familyName:'Bertrand',firstName:'Stephane', email:'s.bertrand@outlook.com', sex:'0' )
-Patient.create(familyName:'Bertrand',firstName:'Claire', email:'c.bertrand@outlook.com', sex:'1' )
-Patient.create(familyName:'Aldaz',firstName:'Jayro', email:'aldazj@outlook.com', sex:'1' )
-Patient.create(familyName:'Jaramillo',firstName:'Andres', email:'andres@bacchusproject.ch', sex:'1' )
-
-# Create introduction_questions
+# Create introduction_questions /!\ TO KEEP !!!!!
 IntroductionQuestion.create(idQuestion:1, tag:'1',	has_comment:'0', woman:'0', question:'Avez-vous déjà consulté un ostéopathe ?')
 FormatQuestion.create(introduction_question_id: '1' ,has_value: '0', value_format: '', women: '0', required: '0')
 
@@ -104,3 +96,15 @@ FormatQuestion.create(introduction_question_id: '31' ,has_value: '0', value_form
 
 IntroductionQuestion.create(idQuestion:32, tag:'',	has_comment:'1', woman:'0', question:'combien par jour?')
 FormatQuestion.create(introduction_question_id: '32' ,has_value: '1', value_format: 'string', women: '0', required: '0')
+
+
+# Add temporary patient
+Patient.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'0' )
+Patient.create(familyName:'Bertrand',firstName:'Stephane', email:'s.bertrand@outlook.com', sex:'0' )
+Staff.create(familyName:'Bertrand',firstName:'Claire', email:'c.bertrand@outlook.com', sex:'1' )
+Patient.create(familyName:'Aldaz',firstName:'Jayro', email:'aldazj@outlook.com', sex:'0' )
+Personne.create(familyName:'Jaramillo',firstName:'Andres', email:'andres@bacchusproject.ch', sex:'0' )
+
+# Build answer for patient test
+Answer.create(presence: '1', introduction_question_id: '1', personne_id:'1')
+Answer.create(presence: '1', introduction_question_id: '2', personne_id:'1', response:'Response 1 hahaha')
