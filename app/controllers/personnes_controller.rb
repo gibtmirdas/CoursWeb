@@ -86,6 +86,10 @@ class PersonnesController < ApplicationController
 		end
 	end
 
+	def find
+		@personnes = Personne.all
+	end
+
 	### Survey for Patient ###
 	def create_survey
 		@patient = Personne.find(params[:personne_id])
@@ -102,6 +106,11 @@ class PersonnesController < ApplicationController
 
 	def save_survey
 		redirect_to @personne, notice: 'Survey was successfully created.'
+	end
+
+	def auto_complete_for_familyName
+		@noms = Personne.find_by_familyName(params[:familyName])
+		render :partial => 'auto_complete'
 	end
 
 	private

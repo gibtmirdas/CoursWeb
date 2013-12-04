@@ -1,83 +1,86 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Familyname:</strong>
-  <%= @personne.familyName %>
+    <strong>Familyname:</strong>
+    <%= @personne.familyName %>
 </p>
 
 <p>
-  <strong>Maidenname:</strong>
-  <%= @personne.maiderName %>
+    <strong>Maidenname:</strong>
+    <%= @personne.maiderName %>
 </p>
 
 <p>
-  <strong>Firstname:</strong>
-  <%= @personne.firstName %>
+    <strong>Firstname:</strong>
+    <%= @personne.firstName %>
 </p>
 
 <p>
-  <strong>Dateofbirth:</strong>
-  <%= @personne.dateOfBirth %>
+    <strong>Dateofbirth:</strong>
+    <%= @personne.dateOfBirth %>
 </p>
 
 <p>
-  <strong>Email:</strong>
-  <%= @personne.email %>
+    <strong>Email:</strong>
+    <%= @personne.email %>
 </p>
 
 <p>
-  <strong>Nationality:</strong>
-  <%= @personne.nationality %>
+    <strong>Nationality:</strong>
+    <%= @personne.nationality %>
 </p>
 
 <p>
-  <strong>Civilstatus:</strong>
-  <%= @personne.civilStatus %>
+    <strong>Civilstatus:</strong>
+    <%= @personne.civilStatus %>
 </p>
 
 <p>
-  <strong>Address:</strong>
-  <%= @personne.address %>
+    <strong>Address:</strong>
+    <%= @personne.address %>
 </p>
 
 <p>
-  <strong>City:</strong>
-  <%= @personne.city %>
+    <strong>City:</strong>
+    <%= @personne.city %>
 </p>
 
 <p>
-  <strong>Zipcode:</strong>
-  <%= @personne.zipCode %>
+    <strong>Zipcode:</strong>
+    <%= @personne.zipCode %>
 </p>
 
 <p>
-  <strong>Co:</strong>
-  <%= @personne.co %>
+    <strong>Co:</strong>
+    <%= @personne.co %>
 </p>
 
 <p>
-  <strong>Privatephone:</strong>
-  <%= @personne.privatePhone %>
+    <strong>Privatephone:</strong>
+    <%= @personne.privatePhone %>
 </p>
 
 <p>
-  <strong>Profphone:</strong>
-  <%= @personne.profPhone %>
+    <strong>Profphone:</strong>
+    <%= @personne.profPhone %>
 </p>
 
 <p>
-  <strong>Illnessinsurance:</strong>
-  <%= @personne.illnessInsurance %>
+    <strong>Illnessinsurance:</strong>
+    <%= @personne.illnessInsurance %>
 </p>
 
 <p>
-  <strong>Additionnalinsurance:</strong>
-  <%= @personne.additionnalInsurance %>
+    <strong>Additionnalinsurance:</strong>
+    <%= @personne.additionnalInsurance %>
 </p>
 
 <p>
-  <strong><%= link_to 'Survey', {:controller => 'surveys', :action => 'edit' }%>
-  </strong>
+    <!-- @TODO edit link -->
+    <% if @personne.type == 'Patient'%>
+        <strong><%= link_to 'Survey', personne_path %>
+        </strong>
+    <% end %>
 </p>
 
 <%= link_to 'Edit', edit_personne_path(@personne) %> |

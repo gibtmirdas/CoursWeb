@@ -17,7 +17,11 @@ Projeto::Application.routes.draw do
 	match '/signin',    to: 'sessions#new',         via: 'get'
 	match '/signout',   to: 'sessions#destroy',     via: 'delete'
 
+	# Finding personne
+	match '/find',to: 'personnes#find',           via: 'get'
+
 	#testing page
 	match '/test',      to: 'static_pages#test',         via: 'get'
+	match '/test2',      to: 'static_pages#test2',         via: 'get'
 
 end

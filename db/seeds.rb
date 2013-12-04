@@ -2,7 +2,11 @@
 
 # Add temporary patient
 
-Patient.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'1' )
+Staff.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'0' )
+Patient.create(familyName:'Bertrand',firstName:'Stephane', email:'s.bertrand@outlook.com', sex:'0' )
+Patient.create(familyName:'Bertrand',firstName:'Claire', email:'c.bertrand@outlook.com', sex:'1' )
+Patient.create(familyName:'Aldaz',firstName:'Jayro', email:'aldazj@outlook.com', sex:'1' )
+Patient.create(familyName:'Jaramillo',firstName:'Andres', email:'andres@bacchusproject.ch', sex:'1' )
 
 # Create introduction_questions
 IntroductionQuestion.create(idQuestion:1, tag:'1',	has_comment:'0', woman:'0', question:'Avez-vous déjà consulté un ostéopathe ?')

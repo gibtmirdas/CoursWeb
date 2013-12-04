@@ -1,3 +1,5 @@
+Encoding.default_external = 'UTF-8'
+
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
 
