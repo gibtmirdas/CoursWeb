@@ -5,11 +5,11 @@ class PersonnesController < ApplicationController
 	# GET /personnes.json
 	def index
 		case params[:type]
-			when 'staff'
+			when 'Staff'
 				@personnes = Staff.all
-			when 'patient'
+			when 'Patient'
 				@personnes = Patient.all
-			when 'personne'
+			when 'Personne'
 				@personnes = Personne.all
 		end
 	end
@@ -21,15 +21,20 @@ class PersonnesController < ApplicationController
 
 	# GET /personnes/new
 	def new
-		case params[:type]
-			when 'staff'
-				@personne = Staff.new
-			when 'patient'
-				@personne = Patient.new
-			when 'personne'
-				@personne = Personne.new
+		if params[:patient] != nil
+			@personne = Patient.new(personne_params)
+		else
+			case params[:type]
+				when 'Staff'
+					@personne = Staff.new
+				when 'Patient'
+					@personne = Patient.new
+				when 'Personne'
+					@personne = Personne.new
+			end
+			@personne.type = params[:type]
 		end
-		@personne.type = params[:type]
+		a=1
 	end
 
 	# GET /personnes/1/edit

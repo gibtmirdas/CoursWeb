@@ -2,11 +2,12 @@ Projeto::Application.routes.draw do
 
 	root  'static_pages#home'
 
-	resources :personnes,   :controller => 'personnes',     :type => 'personne'
-	resources :patients,    :controller => 'personnes',     :type => 'patient'
-	resources :staffs,      :controller => 'personnes',     :type => 'staff'
+	resources :personnes,   :controller => 'personnes',     :type => 'Personne'
+	resources :patients,    :controller => 'personnes',     :type => 'Patient'
+	resources :staffs,      :controller => 'personnes',     :type => 'Ptaff'
 	resources :answers
 	match 'add_survey',     to: 'answers#add_survey',    via: 'post'
+	match '/personnes/new', to: 'personnes#new',          via: 'post',  :type => 'Patient'
 
 	get 'static_pages/home'
 	get 'introduction_question/create'

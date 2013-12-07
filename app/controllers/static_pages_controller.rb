@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-	  @patient = Patient.new
+	  @personne = Patient.new
+	  @personne.type = 'Patient'
   end
 end

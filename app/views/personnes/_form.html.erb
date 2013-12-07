@@ -1,7 +1,7 @@
 <%= form_for(@personne) do |f| %>
     <% if @personne.errors.any? %>
         <div id="error_explanation">
-            <h2><%= pluralize(@personne.errors.count, "error") %> prohibited this personne from being saved:</h2>
+            <h2><%= pluralize(@personne.errors.count, 'error') %> prohibited this personne from being saved:</h2>
             <ul>
             <% @personne.errors.full_messages.each do |msg| %>
                 <li><%= msg %></li>
@@ -26,7 +26,7 @@
         <%= f.label :dateOfBirth %><br>
         <%= f.date_select(:dateOfBirth,:start_year => Time.now.year,:end_year => Time.now.year - 100) %>
     </div>
-    <% if @personne.type == 'patient' %>
+    <% if @personne.type == 'Patient' %>
         <div class="field">
             <%= f.label :referedBy %><br>
             <%= f.text_field :referedBy %>
@@ -40,7 +40,7 @@
         <%= f.label :nationality %><br>
         <%= f.text_field :nationality %>
     </div>
-    <% if @personne.type == 'patient' %>
+    <% if @personne.type == 'Patient' %>
         <div class="field">
             <%= f.label :legalCaregiver %><br>
             <%= f.text_field :legalCaregiver %>
@@ -75,7 +75,7 @@
         <%= f.text_field :profPhone %>
     </div>
 
-    <% if @personne.type == 'patient' %>
+    <% if @personne.type == 'Patient' %>
         <div class="field">
             <%= f.label :trade %><br>
             <%= f.text_field :trade %>
