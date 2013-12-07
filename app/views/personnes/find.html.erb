@@ -1,0 +1,85 @@
+<form class="form-group no-margin-bottom center">
+    <button class="btn btn-success btn-xs no-radius tooltip-success align-middle" type="button" data-rel="tooltip" data-placement="left" title="Ajouter un patient" style="padding-bottom: 3px;padding-top: 8px">
+        <i class="icon-plus-sign bigger-180"></i>
+    </button>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-small input-lg input-mask-patient form-control" type="text" id="form-field-1" placeholder="N° Patient" />
+                        <i class="icon-user"></i>
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-small input-lg input-mask-patient form-control" type="text" id="form-field-1" placeholder="N° Patient" />
+                        <%= text_field_with_auto_complete :personnes, :familyName%>
+                        <i class="icon-user"></i>
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Nom" />
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Prénom" />
+                    </span>
+
+                    <span class="input-icon input-icon-right">
+                        <input class="input-sm input-lg input-large input-mask-phone form-control" id="form-field-mask-2" placeholder="ex. : (+41) 22 - 000 - 00 - 00" />
+                        <i class="icon-phone"></i>
+                    </span>
+
+                     <span class="input-icon input-icon-right">
+                        <input class="input-lg input-sm input-large input-mask-date form-control" id="form-field-mask-1" data-date-format="dd-mm-yyyy" placeholder="Date de naissance (dd/mm/yyyy)" />
+                        <i class="icon-gift"></i>
+                    </span>
+
+    <button class="btn btn-xs btn-info no-radius align-middle" type="button" style="padding-bottom: 3px;padding-top: 8px" >
+        <i class="icon-search bigger-180 center"></i>
+    </button>
+
+    <button class="btn btn-xs  btn-info no-radius tooltip-info align-bottom" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset" style="padding-bottom: 3px; padding-top: 3px">
+        <i class=" icon-refresh bigger-130"></i>
+    </button>
+</form>
+
+
+<table class="table table-border table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Familyname</th>
+        <th>Firstname</th>
+        <th>Dateofbirth</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Zipcode</th>
+        <th>Privatephone</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @personnes.each do |personne| %>
+        <tr data-link="<%= personne_path(:id => personne.id) %>">
+            <td><%= personne.familyName %></td>
+            <td><%= personne.firstName %></td>
+            <td><%= personne.dateOfBirth %></td>
+            <td><%= personne.email %></td>
+            <td><%= personne.city %></td>
+            <td><%= personne.zipCode %></td>
+            <td><%= personne.privatePhone %></td>
+            <td><%= link_to 'Edit Survey', new_answer_path(:personne_id => personne.id) %></td>
+            <td><%= link_to 'Edit', edit_personne_path(personne) %></td>
+            <td><%= link_to 'Edit Survey', new_answer_path(:personne_id => personne.id) %></td>
+            <td><%= link_to 'Destroy', personne, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<script>
+    $("tr[data-link]").click(function() {
+        window.location = this.dataset.link
+    })
+</script>
