@@ -99,11 +99,20 @@ FormatQuestion.create(introduction_question_id: '32' ,has_value: '1', value_form
 
 
 # Add temporary patient
-Patient.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'0' )
+Patient.create(familyName:'Bertrand',firstName:'Thomas', email:'t.bertrand@outlook.com', sex:'0', address:'69, Clos les Clairières', zipCode:'74930', city: 'Pers-Jussy',dateOfBirth:'1989-06-10')
 Patient.create(familyName:'Bertrand',firstName:'Stephane', email:'s.bertrand@outlook.com', sex:'0' )
 Staff.create(familyName:'Bertrand',firstName:'Claire', email:'c.bertrand@outlook.com', sex:'1' )
 Patient.create(familyName:'Aldaz',firstName:'Jayro', email:'aldazj@outlook.com', sex:'0' )
 Personne.create(familyName:'Jaramillo',firstName:'Andres', email:'andres@bacchusproject.ch', sex:'0' )
+Patient.create(familyName:'test1',firstName:'test1', email:'test1@outlook.com', sex:'1' )
+Patient.create(familyName:'test2',firstName:'test2', email:'test2@outlook.com', sex:'0' )
+Patient.create(familyName:'test3',firstName:'test3', email:'test3@outlook.com', sex:'1' )
+Patient.create(familyName:'test4',firstName:'test4', email:'test4@outlook.com', sex:'0' )
+Patient.create(familyName:'test5',firstName:'test5', email:'test5@outlook.com', sex:'1' )
+Patient.create(familyName:'test6',firstName:'test6', email:'test6@outlook.com', sex:'0' )
+Patient.create(familyName:'test7',firstName:'test7', email:'test7@outlook.com', sex:'1' )
+Patient.create(familyName:'test8',firstName:'test8', email:'test8@outlook.com', sex:'0' )
+Patient.create(familyName:'test9',firstName:'test9', email:'test9@outlook.com', sex:'1' )
 
 # Build answer for patient test
 Answer.create(presence: '1', introduction_question_id: '1', personne_id:'1')

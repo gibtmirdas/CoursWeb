@@ -1,0 +1,110 @@
+<%= javascript_include_tag 'jquery.dataTables.min.js', :media => 'all'%>
+<%= javascript_include_tag 'jquery.dataTables.bootstrap.js', :media => 'all'%>
+
+<div class="row col-xs-12">
+    <% if !@patients.nil? %>
+        <div class="table-responsive">
+            <table id="sample-table-2" class="table table-striped table-hover">
+                <thead>
+                <tr role="row">
+                    <th>N° Patient</th>
+                    <th>Nom complet</th>
+                    <th>Dateofbirth</th>
+                    <th>Email</th>
+                    <th>adresse</th>
+                    <th>assurance</th>
+                    <th>complémentaire</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <% @patients.each do |patient| %>
+                    <tr>
+                        <!-- TODO add patient number -->
+                        <td>XXXX</td>
+                        <td><%= patient.firstName %> <%= patient.familyName %></td>
+                        <td>
+                            <% if ! patient.dateOfBirth.nil? %>
+                                <%= patient.dateOfBirth.strftime('%d/%m/%Y') %>
+                            <% end %>
+                        </td>
+                        <td><%= patient.email %></td>
+                        <td><%= patient.address %>
+                            <% if patient.address && (patient.zipCode || patient.city ) %>
+                                </br>
+                            <% end %>
+                            <%= patient.zipCode %> <%= patient.city %>
+                        </td>
+                        <td><%= patient.illnessInsurance %></td>
+                        <td><%= patient.additionnalInsurance %></td>
+                        <td><a href="<%= personne_path(patient.id)%>">
+                            <button class="btn btn-xs btn-info">
+                                <i class="icon-edit bigger-120"></i>
+                            </button></a>
+                            <button class="btn btn-xs btn-danger">
+                                <i class="icon-trash bigger-120"></i>
+                            </button>
+                        </td>
+                    </tr>
+                <% end %>
+                </tbody>
+            </table>
+            <div class="digg_pagination pull-right">
+                <div class="page_info table-header" style="padding-right: 10px;">
+                    <%= page_entries_info @patients %>
+                </div>
+                <div class="pagination">
+                    <%= will_paginate @patients, :container => false %>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $("#patients .pagination a").click(function(){
+            $.getScript(this.href);
+            return false;
+        });
+
+        // Init
+        $(function(){
+            // Link search_engine to search field
+            var fields = document.getElementsByClassName('search_engine_field');
+            var field;
+            for( field in fields){
+                $("#"+fields[field].id+" input").keyup(search_engine);
+            }
+            document.getElementById("reset_search").addEventListener('click', reset_search, false);
+        });
+
+        function search_engine(){
+            var str = "";
+            var fields = document.getElementsByClassName('search_engine_field');
+            var index;
+            for( index=0; index<fields.length; ++index){
+                var idField = fields[index].id.split('_')[2];
+                var valueField = document.getElementsByClassName('field_'+idField)[0].value;
+                if( valueField != '' && valueField != '__/__/____')
+                    str = str+""+ idField+"----"+valueField+"####";
+
+            }
+            document.getElementById('search').value = str;
+            $.get($("#patients_search").attr("action"), $("#patients_search").serialize(), null, "script");
+            return false;
+        };
+
+        function reset_search(){
+            var fields = document.getElementsByClassName('search_engine_field');
+            var field;
+            var index;
+            for( index=0; index<fields.length; ++index){
+                var idField = fields[index].id.split('_')[2];
+                document.getElementsByClassName('field_'+idField)[0].value = '';
+            }
+            search_engine();
+            return false;
+        }
+    });
+</script>

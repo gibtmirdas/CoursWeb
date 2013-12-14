@@ -34,7 +34,6 @@ class PersonnesController < ApplicationController
 			end
 			@personne.type = params[:type]
 		end
-		a=1
 	end
 
 	# GET /personnes/1/edit

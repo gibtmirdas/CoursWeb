@@ -4,43 +4,6 @@
     <div class="col-xs-12 widget-container-span">
         <div class="widget-box transparent">
             <div class="widget-body">
-                <!--<form class ='form-group no-margin-bottom center'>-->
-                    <!--<button href="#" class="btn btn-success btn-xs no-radius tooltip-success align-middle" type="button" data-rel="tooltip" data-placement="left" title="Ajouter un patient" style="padding-bottom: 3px;padding-top: 8px" >-->
-                        <!--<i class="icon-plus-sign bigger-180"></i>-->
-                    <!--</button>-->
-
-                    <!--<span class="input-icon input-icon-right">-->
-                        <!--<input class="input-sm input-small input-lg input-mask-patient form-control" type="text" id="form-field-1" placeholder="N° Patient" />-->
-                        <!--<i class="icon-user"></i>-->
-                    <!--</span>-->
-
-                    <!--<span class="input-icon input-icon-right">-->
-                        <!--<input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Nom">-->
-                    <!--</span>-->
-
-                    <!--<span class="input-icon input-icon-right">-->
-                        <!--<input class="input-sm input-lg input-medium" type="text" id="form-field-1" placeholder="Prénom" />-->
-                    <!--</span>-->
-
-                    <!--<span class="input-icon input-icon-right">-->
-                        <!--<input class="input-sm input-lg input-large input-mask-phone form-control" id="form-field-mask-2" placeholder="ex. : (+41) 22 - 000 - 00 - 00" />-->
-                        <!--<i class="icon-phone"></i>-->
-                    <!--</span>-->
-
-                     <!--<span class="input-icon input-icon-right">-->
-                        <!--<input class="input-lg input-sm input-large input-mask-date form-control" id="form-field-mask-1" data-date-format="dd-mm-yyyy" placeholder="Date de naissance (dd/mm/yyyy)" />-->
-                        <!--<i class="icon-gift"></i>-->
-                    <!--</span>-->
-
-                    <!--<button class="btn btn-xs btn-info no-radius align-middle" type="button" style="padding-bottom: 3px;padding-top: 8px" >-->
-                        <!--<i class="icon-search bigger-180 center"></i>-->
-                    <!--</button>-->
-
-                    <!--<button class="btn btn-xs  btn-info no-radius tooltip-info align-bottom" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset" style="padding-bottom: 3px; padding-top: 3px">-->
-                        <!--<i class=" icon-refresh bigger-130"></i>-->
-                    <!--</button>-->
-                <!--</form>-->
-                <!--New Form with @patient variable management-->
                 <div class="form-group no-margin-bottom center">
                     <%= form_for @personne,:url => new_personne_url(@personne),:class =>'form-group no-margin-bottom center'  do |p| %>
                         <% @personne.type= 'Patient' %>
@@ -49,44 +12,44 @@
                         </span>
 
                         <!--Id TODO change :employer by new :idPatient field-->
-                        <span class="input-icon input-icon-right">
-                            <%= p.text_field :employer, :class => 'input-sm input-small input-lg input-mask-patient form-control',:id=>'form-field-1',:placeholder=>'N° Patient' %>
+                        <span class="input-icon input-icon-right search_engine_field" id = 'patients_search_patientId'>
+                            <%= p.text_field :employer, :class => 'input-sm input-small input-lg input-mask-patient form-control field_patientId',:id=>'form-field-1',:placeholder=>'N° Patient' %>
                             <i class="icon-user"></i>
                         </span>
 
                         <!--familyName-->
-                        <span class="input-icon input-icon-right">
-                            <%= p.text_field :familyName, :class => 'input-sm input-lg input-medium',:id=>'form-field-1',:placeholder=>'Nom' %>
+                        <span class="input-icon input-icon-right search_engine_field" id = 'patients_search_familyName'>
+                            <%= p.text_field :familyName, :class => 'input-sm input-lg input-medium field_familyName',:id=>'form-field-1',:placeholder=>'Nom' %>
                         </span>
 
                         <!--firstName-->
-                        <span class="input-icon input-icon-right">
-                            <%= p.text_field :firstName, :class => 'input-sm input-lg input-medium',:id=>'form-field-1',:placeholder=>'Prénom' %>
+                        <span class="input-icon input-icon-right search_engine_field" id = 'patients_search_firstName'>
+                            <%= p.text_field :firstName, :class => 'input-sm input-lg input-medium field_firstName',:id=>'form-field-1',:placeholder=>'Prénom' %>
                         </span>
 
                         <!--phoneNumbre-->
-                        <span class="input-icon input-icon-right">
-                            <%= p.text_field :privatePhone, :class => 'input-sm input-lg input-large input-mask-phone form-control',:id=>'form-field-mask-2',:placeholder=>'ex. : (+41) 22 - 000 - 00 - 00' %>
+                        <span class="input-icon input-icon-right search_engine_field" id = 'patients_search_privatePhone'>
+                            <%= p.text_field :privatePhone, :class => 'input-sm input-lg input-large input-mask-phone form-control field_privatePhone',:id=>'form-field-mask-2',:placeholder=>'ex. : (+41) 22 - 000 - 00 - 00' %>
                             <i class="icon-phone"></i>
                         </span>
 
                         <!--date of birth-->
-                        <span class="input-icon input-icon-right">
-                            <%= p.text_field :dateOfBirth, :class => 'input-lg input-sm input-large input-mask-date form-control',:id=>'form-field-mask-1',:placeholder=>'Date de naissance (dd/mm/yyyy)' %>
+                        <span class="input-icon input-icon-right search_engine_field" id = 'patients_search_dateOfBirth'>
+                            <%= p.text_field :dateOfBirth, :class => 'input-lg input-sm input-large input-mask-date form-control field_dateOfBirth',:id=>'form-field-mask-1',:placeholder=>'Date de naissance (dd/mm/yyyy)' %>
                             <i class="icon-gift"></i>
                         </span>
 
+                        <!--Search button-->
                         <button class="btn  btn-info no-radius tooltip-info align-middle" type="button" >
                             <i class="icon-search bigger-130 center"></i>
                         </button>
 
-                        <button class="btn  btn-info no-radius tooltip-info align-middle" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="reset">
+                        <!--reset search button-->
+                        <button id="reset_search" class="btn  btn-info no-radius tooltip-info align-middle" data-rel="tooltip" data-placement="right" title="Effacer recherche" type="button">
                             <i class=" icon-refresh bigger-130"></i>
                         </button>
-
                     <% end %>
                 </div>
-
             </div>
         </div>
     </div>
@@ -96,191 +59,17 @@
     <div class="col-xs-12 widget-container-span">
         <div class="widget-box transparent">
             <div class="widget-body ">
-                <div class="widget-main padding-12 no-padding-left no-padding-right no-padding-top">
-                    <div class="tab-content padding-4">
-                        <div class="slim-scroll" data-height="400">
-
-
-                            <div id="profile-feed-1" class="profile-feed">
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <img class="pull-left" alt="Alex Doe's avatar" src="assets/avatars/avatar5.png" />
-                                        <a class="user" href="#"> Alex Doe </a>
-                                        changed his profile photo.
-                                        <a href="#">Take a look</a>
-
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            an hour ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <img class="pull-left" alt="Susan Smith's avatar" src="assets/avatars/avatar1.png" />
-                                        <a class="user" href="#"> Susan Smith </a>
-
-                                        is now friends with Alex Doe.
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            2 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <i class="pull-left thumbicon icon-ok btn-success no-hover"></i>
-                                        <a class="user" href="#"> Alex Doe </a>
-                                        joined
-                                        <a href="#">Country Music</a>
-
-                                        group.
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            5 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <i class="pull-left thumbicon icon-picture btn-info no-hover"></i>
-                                        <a class="user" href="#"> Alex Doe </a>
-                                        uploaded a new photo.
-                                        <a href="#">Take a look</a>
-
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            5 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <i class="pull-left thumbicon icon-key btn-info no-hover"></i>
-                                        <a class="user" href="#"> Alex Doe </a>
-
-                                        logged in.
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            12 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <i class="pull-left thumbicon icon-off btn-inverse no-hover"></i>
-                                        <a class="user" href="#"> Alex Doe </a>
-
-                                        logged out.
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            16 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="profile-activity clearfix">
-                                    <div>
-                                        <i class="pull-left thumbicon icon-key btn-info no-hover"></i>
-                                        <a class="user" href="#"> Alex Doe </a>
-
-                                        logged in.
-                                        <div class="time">
-                                            <i class="icon-time bigger-110"></i>
-                                            16 hours ago
-                                        </div>
-                                    </div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#" class="blue">
-                                            <i class="icon-pencil bigger-125"></i>
-                                        </a>
-
-                                        <a href="#" class="red">
-                                            <i class="icon-remove bigger-125"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
+                <%= form_tag '/', :method => 'get',:id => 'patients_search', :hidden => 'true' do %>
+                    <%= text_field_tag :search, params[:search] %>
+                    <%= submit_tag "Search", :name => nil %>
+                <% end %>
+                <div  id="patients">
+                    <%= render 'patients/patients' %>
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
-
 
 <script type="text/javascript">
     jQuery(function($) {
