@@ -1,4 +1,3 @@
-
 <% provide(:title, 'Bureau') %>
 <div class="row">
     <div class="col-xs-12 widget-container-span">
@@ -66,10 +65,10 @@
                 <div  id="patients">
                     <%= render 'patients/patients' %>
                 </div>
+                <div id="spinner" style="margin-top: 30px"/>
             </div>
         </div>
     </div>
-    <div id="spinner" style="margin-top: 30px"/>
 </div>
 
 <script>
@@ -85,6 +84,70 @@
         trail: 50, // Afterglow percentage
         shadow: false // Whether to render a shadow
     }).spin(document.getElementById("spinner")); // Place in DOM node called "ajaxContentHolder"
+</script>
+
+
+<script type="text/javascript">
+    $(function() {
+        $("#patients .pagination a").click(function(){
+            $.getScript(this.href);
+            return false;
+        });
+
+        // Init
+        $(function(){
+            document.getElementById("search_patients_button").addEventListener('click', search_engine, false);
+            document.getElementById("reset_search").addEventListener('click', reset_search, false);
+            spin_stop();
+
+        });
+
+        function search_engine(){
+            var str = "";
+            var fields = document.getElementsByClassName('search_engine_field');
+            var index;
+            for( index=0; index<fields.length; ++index){
+                var idField = fields[index].id.split('_')[2];
+                var valueField = document.getElementsByClassName('field_'+idField)[0].value;
+                if( valueField != '' && valueField != '__/__/____')
+                    str = str+""+ idField+"----"+valueField+"####";
+
+            }
+            document.getElementById('search').value = str;
+            $.get($("#patients_search").attr("action"), $("#patients_search").serialize(), null, "script");
+            return false;
+        };
+
+        function reset_search(){
+            var fields = document.getElementsByClassName('search_engine_field');
+            var index;
+            for( index=0; index<fields.length; ++index){
+                var idField = fields[index].id.split('_')[2];
+                document.getElementsByClassName('field_'+idField)[0].value = '';
+            }
+            search_engine();
+            return false;
+        }
+
+        /* SPINNER */
+        var target = document.getElementById('spinner');
+        function spin_stop(){
+            spinner.stop();
+        }
+        function spin_start(){
+            spinner.spin(target);
+        }
+
+        jQuery.ajaxSetup({
+            beforeSend: function() {
+                spin_start();
+            },
+            complete: function(){
+                spin_stop();
+            },
+            success: function() {}
+        });
+    });
 </script>
 
 <script type="text/javascript">
