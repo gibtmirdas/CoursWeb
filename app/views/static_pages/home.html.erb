@@ -40,7 +40,7 @@
                         </span>
 
                         <!--Search button-->
-                        <button class="btn  btn-info no-radius tooltip-info align-middle" type="button" >
+                        <button class="btn  btn-info no-radius tooltip-info align-middle" id="search_patients_button" type="button" >
                             <i class="icon-search bigger-130 center"></i>
                         </button>
 
@@ -69,12 +69,30 @@
             </div>
         </div>
     </div>
+    <div id="spinner" style="margin-top: 30px"/>
 </div>
+
+<script>
+
+    // Create the Spinner with options
+    var spinner = new Spinner({
+        lines: 11, // The number of lines to draw
+        length: 7, // The length of each line
+        width: 3, // The line thickness
+        radius: 7, // The radius of the inner circle
+        color: '#000', // #rbg or #rrggbb
+        speed: 1, // Rounds per second
+        trail: 50, // Afterglow percentage
+        shadow: false // Whether to render a shadow
+    }).spin(document.getElementById("spinner")); // Place in DOM node called "ajaxContentHolder"
+</script>
 
 <script type="text/javascript">
     jQuery(function($) {
         $.mask.definitions['~']='[+-]';
-        $('.input-mask-date').mask('99/99/9999');
+        $.mask.definitions['!']='[0-9_]'
+        $('.input-mask-date').mask('!!/!!/!!!!');
+        //$('.input-mask-date').mask('99/99/9999');
         $('.input-mask-phone').mask('(+99) 99 - 999 - 99 - 99');
         $('.input-mask-eyescript').mask('~9.99 ~9.99 999');
         $('.input-mask-patient').mask('p-99-9999');

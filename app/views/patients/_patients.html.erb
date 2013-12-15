@@ -70,16 +70,14 @@
 
         // Init
         $(function(){
-            // Link search_engine to search field
-            var fields = document.getElementsByClassName('search_engine_field');
-            var field;
-            for( field in fields){
-                $("#"+fields[field].id+" input").keyup(search_engine);
-            }
+            document.getElementById("search_patients_button").addEventListener('click', search_engine, false);
             document.getElementById("reset_search").addEventListener('click', reset_search, false);
+            spin_stop();
+
         });
 
         function search_engine(){
+            spin_start();
             var str = "";
             var fields = document.getElementsByClassName('search_engine_field');
             var index;
@@ -105,6 +103,15 @@
             }
             search_engine();
             return false;
+        }
+
+        /* SPINNER */
+        var target = document.getElementById('spinner');
+        function spin_stop(){
+            spinner.stop();
+        }
+        function spin_start(){
+            spinner.spin(target);
         }
     });
 </script>
